@@ -1,119 +1,71 @@
 # Deep-Detect
 
-**Deep-Detect** is a Python-based project for deep learning-powered detection tasks.  
-It provides modular, well-documented code to help you train, evaluate, and deploy detection models with ease.
+**Deep-Detect** is a Python project with a Streamlit web interface for deep learning-based detection tasks.
 
 ---
 
-## 🚀 Features
+## 🛠️ Installation & Local Usage
 
-- Modular code for detection tasks (object detection, anomaly detection, etc.)
-- Support for multiple deep learning frameworks (PyTorch, TensorFlow, etc.)
-- Easy-to-use training and inference scripts
-- Configurable via command-line arguments or config files
-- Well-commented, extensible codebase
-
----
-
-## 🛠️ Installation
-
-1. **Clone the repository:**
+1. **Clone the repository**
     ```bash
     git clone https://github.com/vishnutej000/Deep-Detect.git
     cd Deep-Detect
     ```
 
-2. **Create and activate a virtual environment (recommended):**
+2. **(Optional but recommended) Create a virtual environment**
     ```bash
     python -m venv venv
-    source venv/bin/activate    # On Windows: venv\Scripts\activate
+    # On Windows:
+    venv\Scripts\activate
+    # On macOS/Linux:
+    source venv/bin/activate
     ```
 
-3. **Install dependencies:**
+3. **Install dependencies**
     ```bash
     pip install -r requirements.txt
     ```
-    > Update `requirements.txt` with your actual dependencies.
+
+4. **Run the Streamlit app**
+    ```bash
+    streamlit run app.py
+    ```
+    *(Replace `app.py` with your main Streamlit script if it has a different name.)*
+
+5. **Open your browser and go to:**  
+    [http://localhost:8501](http://localhost:8501)
 
 ---
 
-## ⚡️ Usage
-
-### **Training**
-```bash
-python train.py --config configs/your_config.yaml
-```
-- Replace `configs/your_config.yaml` with your config file.
-
-### **Inference**
-```bash
-python detect.py --input path/to/image.jpg --model path/to/model.pth
-```
-
-### **Evaluation**
-```bash
-python evaluate.py --dataset path/to/dataset --model path/to/model.pth
-```
-
----
-
-## 🧩 Project Structure
+## 📝 Example Project Structure
 
 ```
 Deep-Detect/
-├── configs/           # Configuration files
-├── data/              # Data loading and preprocessing
-├── models/            # Model definitions
-├── utils/             # Utility scripts and helpers
-├── train.py           # Training script
-├── detect.py          # Detection/inference script
-├── evaluate.py        # Evaluation script
-├── requirements.txt   # Python dependencies
+├── app.py                # Streamlit app entry point
+├── requirements.txt      # Python dependencies
+├── models/               # (optional) Model files
+├── utils.py              # (optional) Helper functions
 └── README.md
 ```
 
 ---
 
-## 📝 Examples
+## ⚙️ Requirements
 
-**Run detection on a sample image:**
-```bash
-python detect.py --input samples/sample.jpg --model checkpoints/best_model.pth
-```
-
-**Train a model with a custom config:**
-```bash
-python train.py --config configs/custom.yaml
-```
+- Python 3.8 or higher
+- Streamlit
+- (Other dependencies listed in `requirements.txt`)
 
 ---
 
-## 📦 Requirements
+## 💡 Usage
 
-- Python 3.8+
-- [List all major libraries here, e.g., PyTorch, TensorFlow, OpenCV, etc.]
-
----
-
-## 🧑‍💻 Contributing
-
-Contributions are welcome!  
-Please open an issue or pull request with improvements, bug fixes, or new features.
+- Upload an image or data sample in the web UI.
+- Run detection.
+- View results and visualizations in your browser.
 
 ---
 
-## 📄 License
+## 🙋 Support
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-
----
-
-## 🙋‍♂️ Acknowledgements
-
-- [List any datasets, libraries, or contributors you wish to credit.]
-
----
-
-## ❓ Support
-
-For questions or support, please open an issue on GitHub.
+For questions or issues, please open a GitHub issue.
